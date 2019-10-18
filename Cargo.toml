@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Chris Patuzzo <chris@patuzzo.co.uk>"]
 edition = "2018"
 
+[profile.release]
+lto = true
+
 [build-dependencies]
 build_const = "0.2.1"
 lehmer = "3.0.0"

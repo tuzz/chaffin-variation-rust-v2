@@ -77,6 +77,7 @@ fn run() {
 
     consts.add_value("TABLE", "[[[[usize; ROWS]; N - 1]; FACT[N] / 2]; DIRECTIONS]", table);
     consts.add_value("FLIPS", "[[[usize; N - 1]; FACT[N] / 2]; DIRECTIONS]", flips);
+    consts.add_value("MAPPINGS", "[usize; FACT[N] / 2]", FactTable(mappings));
 }
 
 fn permutation_id_mappings() -> [usize; FACT[N] / 2] {
