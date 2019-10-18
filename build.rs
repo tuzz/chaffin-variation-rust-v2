@@ -2,9 +2,13 @@ use build_const::ConstWriter;
 use lehmer::Lehmer;
 use std::thread::Builder;
 
-const N: usize = 6;
 const FACT: [usize; 7] = [1, 1, 2, 6, 24, 120, 720];
+
+const N: usize = 6;
 const ROWS: usize = 1 + 2 + 6 + 24 + 120;
+
+//const N: usize = 5;
+//const ROWS: usize = 1 + 2 + 6 + 24;
 
 const DIRECTIONS: usize = 2;
 const FORWARD: usize = 0;
